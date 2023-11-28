@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--"DOCTYPE html" Es la declaración que representa el tipo de docuemnto y le ayuda al navegador a mostrar correctamente las pág. web no distingue entre Mayúsculas y minúsculas-->
+<!--para indicar un commit-->
+<!--ctrl + s para guardar cambios-->
+<!-- alt + z se ajusta el texto-->
+<html lang="en">
+<!-- El elemento html Encierra todo el contenido de la pág.y a veces se le conoce como el elemnto raíz-->
+<!--lang="en" es el indicativo del idioma en el que se supone que está la página, sirve para cuando tu buscas algo y le pides por ejemplo a Google que te de resultados solo en Español... si lee en el código que el lenguaje es "En" (inglés" no te la da entre las primeras opciones.-->
+
+<head>
+    <!--Actua como un contenedor de todo aquello que quieres incluir en al pág. html, que no es visible para los usuarios de la pág. puede incluir palabras clave, una descripción, codigo css para dar estilo al contenido. -->
+    <meta charset="UTF-8">
+    <!--Esta etiqueta espesifica la codificación de caracteres utilizada en la pág. web y en este caso se establece la codificación de caracteres estándar que admite una amplia variedad de idiomas y caracteres especiales. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Esta etiqueta se utliza para establecer el tamaño y la escala inicial de nuestra pág. web en dispositivos moviles.Esto asegura que la pag se adapte a diferentes tamaños en la pantalla -->
+    <title>Document</title><!-- titulo que se ve en el navegador-->
+</head>
+
+<body>
+    <!--Van todos los elementos del sitio, encierra todo el contenido que deseas mostrar a los usuarios que visitan mi pag, ya sea texto, imagen, videos, juegos, etc. -->
+    <p>¿Porqué entre a Generation?</p><!--Para indicar que aquí escribiremos un parafo-->
+    <p>Entre por que quiero aprender Java, me gusta mucho el ámbito de la tecnología y me encantaría conseguir mi primer empleo</p>
+    <!--Etiquetas de cabecera (h1... h6)-->
+    <h1>Generation</h1>
+    <h2>Generation</h2>
+    <h3>Generation</h3>
+    <h4>Generation</h4>
+    <h5>Generation</h5>
+    <h6>Generation</h6>
+    <br> <!--El elemento HTML br salto de línea sin comenzar un nuevo parafo-->
+    <hr>
+    <!--hr etiqueta que define la ruptura temática en una pag HTML y se muestra como una regla horizantal. EL uso es para separar contenido-->
+    <br>
+    <hr>
+    <!--Atributos-->
+    <!--Atributos globales: Son aquellos que se aplicar a todos los elementos del documento, y no dependen de la etiqueta. Entre los atributos globlales más importantes están:
+    
+        - Class: Se usa para especificar una clase CSS que se aplicará a un elemento. Por ejemplo <div class="clase1 clase2">.
+        
+        - id: Se usa para especificar un identificador unico para un elemento (el valor debe ser único dentro del documento HTML).
+
+        - Style: Se usa para especificar una propiedad CSS que se aplicará a un elemento. El atributo HTML style se usa para agregar estilos a un elemento, como color, fuente, tamaño y más.
+    https://www.aluracursos.com/blog/ques-es-html-parte-5-atributos -->
+    <h3>Atributos HTML</h3>
+    <p style="color:blueviolet;" align="center">Los atributos html proporcionan información adicional sobre elementos.
+        <br>
+        Todos los elementos html pueden tener atributos y estos proporcionan información adicional sobre ellos. Los
+        atributos siempre se especifican en etiqueta de inicio, y generalmente vienen en pares de nombre como
+        nombre="valor"
+    </p>
+    <hr>
+    <b>QUE HACEMOS</b>
+    <br>
+    Somos una Fundación internacional con presencia en 16 países y nuestro objetivo es lograr que cada joven tenga una
+    trayectoria personal y profesional, en cualquier parte del mundo.
+
+    Te ofrecemos programas de capacitación que transformarán fundamentalmente tu vida y te ayudarán a encontrar puestos
+    bien pagados y una carrera apasionante. Mediante nuestros cursos te enseñaremos las habilidades blandas y técnicas
+    que el mercado laboral está necesitando.
+    <p style="color:blue;">Mira este enlace.</p>
+    <br>
+    <hr>
+    <!--Etiquetas de parrafo de texto: Crea parrafos dentro del documento. Tienen una serie de atributos que definen tamaño,color, etc.
+    <p align="center">
+    <p align="right">
+    <p align="left">
+    <p align="justify">-->
+    <!--Etiquetas Semanticas: fragmentos de texto
+    Son etiquetas HTML simples para seleccionar un fragmento de texto y dotarlo de un significado semántico especial. Lo principal es entender que no se hace sólo por mera intención visual, sino porque se le quiere dar un significado semántico, y además, quizás también por una cuestión visual
+    https://lenguajehtml.com/html/texto/que-son/
+-->
+    <!--etiqueta a-->
+    <h4>Etiqueta a</h4>
+    <a href="https://mexico.generation.org/" target="_blank">Generation</a>
+    <br>
+    <h4>Correo</h4>
+    <a href="mailto: dev.karenmorales@gmail.com">Enviar correo a Karen</a>
+    <br>
+    <br>
+    <!--
+Listas ordenadas: Listas que tienen un orden (numeros o letras)
+    1.- Tacos al pastor
+    2 - Tacos de suadero
+    3.- Tacos de chicharron
+
+    a.- Tacos al pastor
+    b - Tacos de suadero
+    c.- Tacos de chicharron
+
+Listas desordenadas: Listas que NO tienen un orden (bullets o figuritas)
+
+    - Tacos al pastor
+    - Tacos de suadero
+    - Tacos de chicharron
+
+    <ol> Ordered list o lista ordenada </ol>
+    <li> List item o elemento de la lista </li>
+    <ul> desordenada
+
+-->
+    <h3>Listas ordenadas y desordenadas</h3>
+    <ol>Pasos para preparar una limonada
+        <li>Reúne los limones, el agua y el azúcar</li>
+        <li>Se agrega azúcar a la jarra de agua y mezclar</li>
+        <li>Cortar los limones</li>
+        <li>Exprimir los limones en la jarra de agua con azúcar y mezclar</li>
+    </ol>
+    <br>
+    <ul>Lista de útiles
+        <li>mochila</li>
+        <li>cuaderno</li>
+        <li>lapiceros</li>
+        <li>tijeras</li>
+    </ul>
+    <br>
+    <hr>
+    <!--Etiqueta Div-->
+    <!--La <div>etiqueta define una división o una sección en un documento HTML.
+    La <div>etiqueta se utiliza como contenedor de elementos HTML, que luego se diseñan con CSS o se manipulan con JavaScript.
+    
+    La <div>etiqueta se diseña fácilmente usando el atributo class o id.
+    
+    ¡Se puede poner cualquier tipo de contenido dentro de la <div> etiqueta! 
+    
+    Nota: De forma predeterminada, los navegadores siempre colocan un salto de línea antes y después del <div>elemento.
+
+    Todos los atributos que se agreguen al div se aplicarán a todos los elementos. -->
+    <h2>Etiqueta Div</h2>
+    <div style="background-color: aquamarine; border: 2px solid red">
+        <h4>Soy un encabezado dentro de un div</h4>
+        <p>soy un párrafo dentro del mismo div</p>
+
+    </div>
+    <p>soy un párrafo fuera del div</p>
+    <br>
+    <hr>
+<!--La etiqueta <span> es un contenedor en línea que se utiliza para marcar una parte de un texto o una parte de un documento.
+
+    La etiqueta <span> se diseña fácilmente con CSS o se manipula con JavaScript usando el atributo class o id.
+    
+    La etiqueta <span> es muy parecida al elemento <div> , pero <div> es un elemento a nivel de bloque y <span>es un elemento en línea.-->
+        <br>
+        <h3>El elemento span</h3>
+        <p>
+            El elemento span es utilizado para agregar texto u otros componentes html en un solo contenedor.
+            En la CH35, tomamos <span style="color: blue; font-size: 30px;">cafecito en una taza</span> y nos gusta comer <span style="color: brown; font-size: 30px;">pan con nutella</span>
+        </p>
+        <br>
+    <!--Etiqueta de imagen: img
+    La etiqueta imagen nos permite agregar una imagen en un documento web. En formatos más usados: jpeg, png, gift.
+- src (source): define la ubicación del archivo ya sea externa o interna
+-width: definimos ancho de imagen
+-height: con esto definimos el alto de nuestra imagen
+-alt: podemos agregar una descripción-->
+    <p align="center" style="color:rgb(192, 84, 84)">
+        <b><em>Celebrando a Marlene AhrensCon</em> <!--b etiqueta para negrita y em texto enfatizado--> </b>
+        <u>el Doodle de hoy,</u> se celebra a la atleta chilena Marlene Ahrens, la primera mujer chilena en ganar una
+        <del>medalla olímpica.</del>
+    </p><!--del etiqueta de texto tachado-->
+<!--Etiquetas de enlace.-->
+    <!--Los enlaces nos permiten la navegacion por medio de hipervinculos (links) que realizan una conexion y referencian otros archivos o paginas web dentro de la misma aplicacion o externa a la misma.
+
+    En HTML 5 se pueden definir los enlaces con la etiqueta a que significa "anchor" o ancla. Esta etiqueta tiene varios atributos:
+
+    - href: nos permite definir la ubicación de la página a la que nos vamos a enlazar. Este atributo puede ser una URL (externa) o un archivo dentro de nuestra carpeta del proyecto (assets). La dirección va entre comillas.El atributo href. La <a>etiqueta define un hipervínculo. El href-atributo especifica la URL de la página a la que va el enlace.
+
+    - target: Define la ventana de destino, que puede ser una ventana nueva o la misma ventana.
+        - _blank: abre el enlace en una nueva ventana.
+        - _self: abre el enlace en la misma ventana. Este es el valor por defecto.
+        Ya que sabemos como hacer referencias a paginas, es importante conocer las distintas rutas de enlace y sus tipos.
+
+    - Rutas absolutas: Son aquellas que definien la ubicacion completa de un archivo o pagina web, por ejemplo: http://www.google.com.
+
+    - Rutas relativas: Son las que se definen a partir de la posicion en la estructura local de la pagina que lo esta refiriendo,es decir, solo indica el orden de directorios, por ejemplo: /assets/img/perritoplayero.jpg.
+-->
+<br>
+<p style="background-color: aquamarine;">
+    <b>ACERCA DE NOSOTROS</b>
+    <br>
+    A nivel mundial, más de <span style="color: red;">75 millones de jóvenes están desempleados.</span> Sin embargo, muchos empleadores no pueden encontrar personas con las habilidades necesarias para un primer nivel organizacional. Generation es una organización independiente y sin ánimo de lucro, fundada en 2014 por <em>McKinsey & Company</em> para ayudar a cerrar esta brecha velozmente y de forma escalable.
+</p>
+<ul><b>Lista de super</b>
+    <br>
+    <br>
+    <li>Fruta</li>
+        <ol>
+            <li>Manzana</li>
+            <li>Fresa</li>
+            <li>Aguacate</li>
+        </ol>
+    <li>Carnes</li>
+        <ol>
+            <li>Bisteck</li>
+            <li>Pollo</li>
+            <li>Arrachera</li>
+        </ol>
+    <li>Lacteos</li>
+        <ol>
+            <li>Leche</li>
+            <li>Yogurth</li>
+            <li>Queso</li>
+        </ol>
+    <li>Limpieza</li>
+        <ol>
+            <li>Cloro</li>
+            <li>Lavatrastes</li>
+            <li>Servitoallas</li>
+        </ol>
+        <br>
+<img src="./assets/coraje.JPG" width="200" height="250" alt="coraje, el perro cobarde">
+</body>
+</html><!--Da el cierre del documento html que iniciamos en el DOCTYPE-->

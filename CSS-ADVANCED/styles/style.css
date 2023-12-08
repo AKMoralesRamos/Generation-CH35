@@ -21,6 +21,7 @@ body {
  height: 100px;
  background-color: var(--color-dark);
 }
+
 /*La posición estática es la posición por default del html, no se afecta por top, bottom, left ni right de ningún. */
 #static {
     background-color: var(--color-text-secondary);
@@ -28,13 +29,14 @@ body {
     top:20px;
     bottom:20px;
     left:20px;
+    right: 20px;
 }
 /* Es posicionado de forma relativa al elemento anterior o posición original y si permite movimientos mediante propiedades top, bottom, left, right. */
 #relative {
     background-color: var(--color-primary);
     position: relative;
-    top:50px;
-    left: 200px;
+    top:0px;
+    left: 100px;
 }
 /* Se posiciona de forma relativa a su ancestro más cercano y no con respecto al viewport. */
 #absolute {
@@ -42,23 +44,26 @@ body {
     color: var(--color-dark);
     position:absolute;
     top:20px;
-    left:20px;
+    left:100px;
+}
+
+/* entonces absolute es como un relative si no tiene ancestro */
+#fixed{
+    left: 350px;
+    top: 500px;
+    position: fixed;
 }
 /*este será el ancestro sobre el cual se moverá el hijo*/
 #ancestro {
     position: absolute;
     width: 100px;
     height: 100px;
+    left: 30px;
+    top: 60px;
     background-color: var(--color-dark);
     border: solid var(--color-light) 1px;
 }
 
-/* entonces absolute es como un relative si no tiene ancestro */
-#fixed {
-    left: 300px;
-    top:400px;
-    position: fixed;
-}
 
 /*Nos permite mantener el elemento de manera fija en el viewport*/
 
@@ -217,10 +222,4 @@ section {
     background-color: peru;
     grid-area: section;
 }
-
-footer {
- background-color: blue;
- grid-area: footer;
-}
-
 

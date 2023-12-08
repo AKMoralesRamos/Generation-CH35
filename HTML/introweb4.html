@@ -87,5 +87,88 @@
     
 
 </table>
+
+
+<h3>¿Cuánto cuesta mantener una mascota?</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam error non placeat exercitationem minima neque numquam quaerat fugit nam eos, modi, ad corporis ut ipsam voluptatum a sunt amet laudantium harum nihil dolorum? Laboriosam suscipit nihil autem veniam fugit doloribus maiores. Aut natus nostrum velit. Quibusdam ullam at culpa deserunt.</p>
+
+
+
+<h3 id="seccion4">Dueño responsable</h3>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate similique, non totam quibusdam temporibus nulla. Magnam harum delectus earum sed possimus, sunt explicabo labore tenetur, aliquid perferendis id error dolorum vitae excepturi maxime autem, asperiores voluptas placeat tempora amet quia ducimus provident. Ut ratione distinctio dolores quae ex maxime fuga.</p>
+
+<a href="index.html">Regresar la inicio</a>
+<a href="#anclajes">Artículo Menú</a>
+<br>
+<br>
+<br>
+
+<h2>Anclaje externo</h2>
+<br>
+<h5>Referenciar un artículo dentro de otro</h5>
+<a href="https://www.telediario.mx/comunidad/refugios-de-animales-en-guadalajara-para-adopcion" target="_blank">Refugios GDL</a> <!--estos anclajes enlazan a una página web diferente. El valor del atributo href es la URL completa del sitio web de destino y el identificador de la sección.-->
+<h5>Anclar número telefónico</h5>
+<a href="tel:+5265984173">Llamar a fulanita</a>
+<br>
+<h5>Anclaje de WhatsApp</h5>
+<a href="https://wa.me/1234567890" target="_blank">Enviamos un mensaje</a>
+<!--Estos enlaces abren whatsapp en un navegador o en la aplicación móvil, para que los usuarios puedan enviar mensajes al número predefinido-->
+<br>
+<h5>Anclaje de mapa</h5>
+<a href="https://www.google.com/maps/place/Bah%C3%ADa+Chahu%C3%A9/@15.7605393,-96.1277285,16.25z/data=!4m15!1m8!3m7!1s0x85bf2144357e96bf:0x3f8a833092034116!2sPlaya+Huatulco,+Coyula+Sector+U,+70988+Crucecita,+Oax.!3b1!8m2!3d15.7735348!4d-96.1393248!16s%2Fg%2F1tfydxcp!3m5!1s0x85bf210807696c71:0x86d3ed081ec03e70!8m2!3d15.7599853!4d-96.1226493!16s%2Fg%2F11gxtkqkxf?entry=ttu" target="_blank">Mapa</a>
+<!--estos enlaces nos permiten enlazar ubicaciones específicas en servicios de mapas, ya sea con Google, para que los usuarios puedan tener la referencia-->
+<br>
+<h5>Anclaje de redes sociales</h5>
+<a href="https://www.facebook.com/VegattosMx/?locale=es_LA" target="_blank">Facebook de Vegattos</a>
+<br>
+<br>
+<br>
+<h1>Formularios y tipos de entrada</h1>
+<form action="procesar_formulario" method="post"></form>
+<!--la etiqueta form, se utiliza para crear un formulario en HTML que permite a los usuarios ingresar información.
+action: específica a la URL a la que se enviaran los datos del formulario cuando este se envía
+method: define el método HTTP que se utilizará para enviar los datos {puede ser get o post}-->
+<br>
+<br>
+<h4>Etiqueta input</h4> <!--la etiqueta input se utiliza para crear campos de entrada en un formulario-->
+<input type="text" name="Usuario" placeholder="Introduce tu nombre">
+<input type="password" name="contraseña" placeholder="Introduce tu contraseña"> <!--type: define el tipo de entrada (texto, contraseña, correo electrónico,etc).
+name: es el nombre del campo, utilizada para identificar el dato cuando se envía el formlario.
+placeholder: Proporciona un texto de ejemplo dentro del campo de entrada-->
+<br>
+<br>
+<h4>Etiqueta label</h4>
+<!--la etiqueta label se utiliza para etiquetar un elemento de entrada en un formulario, lo que mejora la accesibilidad y la experiencia del usuario.
+https://developer.mozilla.org/es/docs/Web/HTML/Element/textarea -->
+<label for="usuario">Usuario: <!--for: es un atributo que se asocia con el "id" de un elemento de entrada para indicar a que campo se refiere.-->
+<input type="text" id="usuario" name="usuario">
+</label> 
+<br>
+<h4>Etiqueta button</h4>
+<!--esta etiqueta se utiliza para crear botones en un formulario que los usuarios pueden usar para hacer click y enviar su información-->
+<button type="submit">Enviar</button>
+<button type="reset">Resetear</button> <!--type: define el tipo de botón-->
+<br>
+<h4>Área de texto</h4>
+<textarea name="comentarios" id="comentarios" cols="50" rows="10" placeholder="Ponga sus comentarios"></textarea> <!--cols y row, se refiere a filas y columnas-->
+<br>
+<h4>Número</h4>
+<!--este tipo de entrada crea un campo de entrada para números-->
+<input type="number" name="number" placeholder="Elija su edad">
+<br>
+<h4>Correo electrónico (email)</h4>
+<input type="email" name="correo" placeholder="Ingrese su correo electrónico">
+<br>
+<h4>Número telefónico (tel)</h4>
+<input type="tel" name="telefono" placeholder="Ingrese su número">
+<br>
+<h4>Fecha (date)</h4>
+<input type="date" name="fecha">
+<br>
+<h4>Hora (time)</h4>
+<input type="time" name="hora">
+<br>
+<h4>Archivo (file)</h4>
+<input type="file" name="archivo">
 </body>
 </html>

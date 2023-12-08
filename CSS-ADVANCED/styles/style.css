@@ -1,0 +1,226 @@
+:root {
+    --font-primary: 'Poppins', sans-serif;
+    --color-primary: #A60311;    /*nomenclatura hexadecimal*/
+    --color-secundary: #D9042B;
+    --color-text-primary: #D9CCD4;
+    --color-text-secondary: #D98E04;
+    --color-background: #590219;
+    --color-light: #F2F2F2;
+    --color-dark: #070C26;
+}
+/*https://developer.mozilla.org/es/docs/Web/CSS/:root */
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-light);
+    font-family: var(--font-primary);
+}
+
+.position {
+ width: 100px;
+ height: 100px;
+ background-color: var(--color-dark);
+}
+/*La posición estática es la posición por default del html, no se afecta por top, bottom, left ni right de ningún. */
+#static {
+    background-color: var(--color-text-secondary);
+    position: static;
+    top:20px;
+    bottom:20px;
+    left:20px;
+}
+/* Es posicionado de forma relativa al elemento anterior o posición original y si permite movimientos mediante propiedades top, bottom, left, right. */
+#relative {
+    background-color: var(--color-primary);
+    position: relative;
+    top:50px;
+    left: 200px;
+}
+/* Se posiciona de forma relativa a su ancestro más cercano y no con respecto al viewport. */
+#absolute {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+/*este será el ancestro sobre el cual se moverá el hijo*/
+#ancestro {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-dark);
+    border: solid var(--color-light) 1px;
+}
+
+/* entonces absolute es como un relative si no tiene ancestro */
+#fixed {
+    left: 300px;
+    top:400px;
+    position: fixed;
+}
+
+/*Nos permite mantener el elemento de manera fija en el viewport*/
+
+/*Un elemento posicionado absolutamente es un elemento cuyo valor computado de position es absolute o fixed. Las propiedades top, right, bottom, y left especifican el desplazamiento desde los bordes del bloque contenedor (en-US) del elemento. (El bloque contenedor es el ancestro relativo al cual el elemento está posicionado). Si el elemento tiene márgenes, se agregarán al desplazamiento. el elemento establece un nuevo contexto de formato de bloque para su contenido*/
+
+/*rem medida*/
+
+#chat {
+    position:fixed;
+    top: 550px;
+    left:400px;
+    width: 60px;
+    height: 60px;
+    /* border: solid var(--color-light) 1px;
+} */
+}
+#whatsapp-icon {
+    width: 100%;
+}
+
+.display-inline {
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-text-primary);
+    color: var(--color-dark);
+    text-align: center;
+    margin: 2px;
+}
+
+#display-1, #display-2 {
+    display: inline;
+}
+
+.display-block {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-secundary);
+    text-align: center;
+    margin: 2px;
+}
+
+@media (max-width: 720px){
+    .display-none {
+        display: none;
+    }
+}
+
+/*me permite trabajar de manera flexible con elementos anidados dentro de un ancestro. El flexbox se aplica en el container y tiene efecto sobre los hijos. 
+Por default, la dirección de flex es en filas (row). Vamos a poder acceder a diversas propiedades para modificar el comportamiento de los elementos.*/
+/* flex-direction: column, column-reverse, row, row-reverse.
+flex-wrap: wrap, nowrap, wrap-reverse.
+justify-content: center, flex-start, flex-end, space-between, space .
+align-item: start, end, center.
+align- self: */
+
+
+.container {
+    display: flex;
+    /* flex-direction: row-reverse; */
+   /*  flex-direction: column-reverse; */
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+  /*  align-items: center; */
+
+    width: auto;
+    height: 350px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--color-text-secondary);
+}
+
+.display-flex {
+    width: 100px;
+    height: 80px;
+    margin:5px;
+    padding: 2px;
+    text-align: center;
+    background-color: var(--color-background);
+    border-radius: 6px;
+}
+
+.display-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#item-6 {
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+/*Grid Layout
+Elementos de una cuadrícula grid: contenedor, items, celdas, area, display: grid
+número de autos es número de filas o columnas*/
+
+.grid {
+    display: grid;
+    grid-template-columns: auto ;
+    /* grid-template-rows: auto; */
+    gap: 20px;
+    padding: 10px;
+}
+
+.display-grid {
+    background-color: var(--color-text-secondary);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+}
+/* https://developer.mozilla.org/es/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout 
+https://desarrolloweb.com/articulos/que-es-css-grid-layout.html
+https://github.com/danieldlcm86/RepositorioCH35*/
+.container-1 {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-areas:
+    "head head head"
+    "aside section section"
+    "aside article article"
+    "footer footer footer"
+    ;
+    width: auto;
+    height: 500px;
+    border: solid var(--color-text-primary) 0.7px;
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+}
+
+header {
+    background-color: purple;
+    grid-area: head;
+}
+
+
+aside {
+    background-color: seagreen;
+    grid-area:aside;
+}
+
+article {
+    background-color: tomato;
+    grid-area: article;
+}
+
+section {
+    background-color: peru;
+    grid-area: section;
+}
+
+footer {
+ background-color: blue;
+ grid-area: footer;
+}
+
+

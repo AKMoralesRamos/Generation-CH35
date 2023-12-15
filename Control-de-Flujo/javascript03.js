@@ -114,5 +114,3 @@ console.log(verificacion);
 /*cuando usar if-else o cuando switch
 if-else: cuando necesitamos tomar decisiones bajo condiciones más fléxibles.
 switch: cuando tengamos un conjunto fijo de valores para comparar una expresión./
-
-

@@ -75,14 +75,6 @@ sumarNumerosNaturales(numerosNaturales); */
 /*
 *Ejercicio : Números Primos
 Escribe un programa que determine si un número ingresado por el usuario es primo o no. Un número primo es aquel que solo es divisible por 1 y por sí mismo. Puedes utilizar un bucle for para verificar si el número tiene algún divisor además de 1 y él mismo.*/
-/* let number = 5
-function isPrime(number) {
-  for (let number = 2; i <= Math.sqrt(num); i++) {
-    if (num % i === 0) return false;
-  }
-  return true;
-}
-isPrime(5); */
 
 function isPrime(num) {
   for (let i = num; i <= Math.sqrt(num); i++) {

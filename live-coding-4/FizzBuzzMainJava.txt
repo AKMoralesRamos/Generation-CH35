@@ -1,0 +1,8 @@
+package org.generation.liveCoding4;
+
+public class FizzBuzzMain {
+    public static void main(String[] args) {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        fizzBuzz.imprimir();
+    }
+}
